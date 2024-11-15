@@ -14,8 +14,11 @@
 
         id="scene">
         <a-assets>
-            <a-asset-item id="modelo" src="modelos/hatsune_miku_chibi_w_stand.glb"></a-asset-item>
-            <a-asset-item id="modelo2" src="modelos/rei_plush.glb"></a-asset-item>
+            <a-asset-item id="modelo" src="modelos/black_cover.glb"></a-asset-item>
+            <a-asset-item id="modelo2" src="modelos/death_note.glb"></a-asset-item>
+            <a-asset-item id="modelo3" src="modelos/evangelion01.glb"></a-asset-item>
+            <a-asset-item id="modelo4" src="modelos/rengoku.glb"></a-asset-item>
+            <a-asset-item id="modelo5" src="modelos/snk.glb"></a-asset-item>
         </a-assets>
         <a-marker type="barcode" value="0" raycaster="objects: .clickable" emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;">
@@ -28,7 +31,24 @@
         gltf-model="#modelo2" scale="5 5 5" class="clickable" gesture-handler>
         </a-entity>
         </a-marker>
-
+        <a-marker type="barcode" value="7" raycaster="objects: .clickable" emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;">
+        <a-entity
+        gltf-model="#modelo3" scale="5 5 5" class="clickable" gesture-handler>
+        </a-entity>
+        </a-marker>
+        <a-marker type="barcode" value="27" raycaster="objects: .clickable" emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;">
+        <a-entity
+        gltf-model="#modelo4" scale="5 5 5" class="clickable" gesture-handler>
+        </a-entity>
+        </a-marker>
+        <a-marker type="barcode" value="31" raycaster="objects: .clickable" emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;">
+        <a-entity
+        gltf-model="#modelo5" scale="5 5 5" class="clickable" gesture-handler>
+        </a-entity>
+        </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
     </body>
