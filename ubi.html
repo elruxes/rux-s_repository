@@ -18,7 +18,7 @@
             const userLon = position.coords.longitude;
 
             // Obtenemos las coordenadas del usuario para mostrarlas en pantalla y guiarnos
-            document.getElementById('userLocation').innerHTML = Ubicación del usuario:<br>Latitud: ${userLat}<br>Longitud: ${userLon};
+            document.getElementById('userLocation').innerHTML = `Ubicación del usuario:<br>Latitud: ${userLat}<br>Longitud: ${userLon}`;
 
             // Se calculan las coordenadas entre la persona y el objeto
             const distance = Math.sqrt(Math.pow(userLat - targetLatitude, 2) + Math.pow(userLon - targetLongitude, 2));
