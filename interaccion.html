@@ -20,11 +20,6 @@
 	    <a-asset-item id="modelo4" src="modelos/rengoku.glb"></a-asset-item>
 	    <a-asset-item id="modelo5" src="modelos/snk.glb"></a-asset-item>
 
-		<audio id="BC" src="Black Clover.mp3" preload="auto"></audio>
-		<audio id="DN" src="Death Note.mp3" preload="auto"></audio>
-		<audio id="DS" src="Demon Slayer.mp3" preload="auto"></audio>
-		<audio id="SnK" src="Shingeki No Kyojin.mp3" preload="auto"></audio>
-		<audio id="EV" src="Evangelion.mp3" preload="auto"></audio>
         </a-assets>
             
         <a-marker type="barcode" value="0" raycaster="objects: .clickable" emitevents="true"
@@ -69,56 +64,5 @@
         <a-entity camera></a-entity>
         </a-scene>
 
-        <script>
-		var BcAudio = document.getElementById('BC');
-		var DnAudio = document.getElementById('DN');
-		var DsAudio = document.getElementById('DS');
-		var EvAudio = document.getElementById('EV');
-		var SnKAudio = document.getElementById('SnK');
-
-	   
-		document.querySelector('[value="0"]').addEventListener('markerFound', function () {
-			BcAudio.play();
-		});
-		document.querySelector('[value="0"]').addEventListener('markerLost', function () {
-			BcAudio.pause();
-			BcAudio.currentTime = 0; // reiniciar el audio desde el inicio
-		});
-
-		
-		document.querySelector('[value="63"]').addEventListener('markerFound', function () {
-			DnAudio.play();
-		});
-		document.querySelector('[value="63"]').addEventListener('markerLost', function () {
-			DnAudio.pause();
-			DnAudio.currentTime = 0;
-		});
-    
-			document.querySelector('[value="27"]').addEventListener('markerFound', function () {
-			DsAudio.play();
-		});
-		document.querySelector('[value="27"]').addEventListener('markerLost', function () {
-			DsAudio.pause();
-			DsAudioo.currentTime = 0; // reiniciar el audio desde el inicio
-		});
-		
-
-			document.querySelector('[value="7"]').addEventListener('markerFound', function () {
-			EvAudio.play();
-		});
-		document.querySelector('[value="7"]').addEventListener('markerLost', function () {
-			EvAudio.pause();
-			EvAudio.currentTime = 0; // reiniciar el audio desde el inicio
-		});
-
-		
-			document.querySelector('[value="31"]').addEventListener('markerFound', function () {
-			SnKAudio.play();
-		});		
-		document.querySelector('[value="31"]').addEventListener('markerLost', function () {
-			SnKAudio.pause();
-			SnKAudioo.currentTime = 0; // reiniciar el audio desde el inicio
-		});
-		</script>
     </body>
 </html>
